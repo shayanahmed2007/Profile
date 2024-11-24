@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body {
+    color: white !important;
+    font-family: "Poppins", serif;
+    background-color: #1f242d !important;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0; 
+    padding-top: 6rem; /* Navbar height ke hisaab se */
+}
+
+.excel-container {
+    position: fixed;
+    top: 0;
+    background-color: #1f242d;
+    width: 100%;
+    height: 6rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Navbar ke content center align */
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.homebox {
+    text-align: start;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    padding: 2rem 0rem;
+}
+
+.logo {
+  
+    margin: 30px 159px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 2em;
+    transition: color 0.5s ease, transform 0.5s ease;
+    position: fixed;
+    position: relative;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: normal;
+    position: relative;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+
+}
+.had{
+    margin-top: 1rem;
+}
+
+
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    /* Adjust as needed */
+    width: 0;
+    height: 2px;
+    /* Thickness of the underline */
+    background-color: #0ef;
+    /* Color of the underline */
+    transition: width 0.4s ease, left 0.4s ease;
+    transform: translateX(-50%);
+    /* Centers the underline */
+}
+.navbar li a:hover::after {
+    width: 85%;
+    /* Expands the underline to full width */
+    left: 10;
+    /* Resets left to start expanding from the center */
+}
+
+::selection {
+    color: #0ef;
+}
+
+.navbar li a:active{
+    color: #0ef;
+    text-decoration: unset;
+}
+
+.home-section {
+    margin: 6rem 10rem;
+}
+
+
+
+
+.homebox>p {
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    margin-right: 14rem;
+    margin-top: 4px;
+}
+
+.social-icons>a>i {
+    color: #0ef;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    padding: 6px 6px;
+    margin: 20px 4px;
+    /* box-shadow: #0ef 0px 0px 10px; */
+    transition: .5s ease;
+}
+
+.social-icons>a>i:hover {
+    background-color: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 1rem #0ef;
+}
+
+.homebox h1 {
+    font-size: 35px;
+    margin: 20px 0px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 20px 2px;
+    
+}
+
+span {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.first-btn {
+    border: 2px solid #0ef;
+    border-radius: 40px;
+    background-color: #0ef;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px 5px rgba(14, 239, 255, 0.5);
+    font-weight: bolder;
+    transition: .5s ease;
+    margin-top: 6px;
+}
+
+.first-btn>a {
+    text-decoration: none;
+    color: #212121;
+
+}
+
+.first-btn:hover {
+    box-shadow: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+
+/* Scrollbar Thumb (Handle) */
+::-webkit-scrollbar-thumb {
+    background-color: #4c8bf5; /* A vibrant blue for a modern look */
+    border-radius: 20px; /* Smooth round edges */
+    border: 3px solid #2e3b44; /* Slightly darker than track for subtle contrast */
+}
+
+/* Scrollbar Track (Background) */
+::-webkit-scrollbar-track {
+    background-color: #2b3139; /* Subtle dark tone blending with the page */
+    border-radius: 10px; /* Smooth round edges for consistency */
+}
+
+/* Scrollbar Corner (Where vertical & horizontal meet) */
+::-webkit-scrollbar-corner {
+    background-color: #2e3b44; /* Harmonious with track but slightly distinct */
+}
+
+/* Optional: Hover Effect on Thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #72a7ff; /* Slightly lighter blue for hover feedback */
+}
+
+/* About Section Design  */
+
+section{
+    background-color: #323946;
+    margin: 9rem 0rem;
+}
+.Jumbo-container{
+    margin: 0rem 4rem;
+    padding:5rem 2rem ;
+    text-align: center;
+    font-family: "Host Grotesk", sans-serif;
+}
+.Jumbo-container h1{
+    font-size: 2rem;
+}
+
+
+
+.men{
+    line-height: 4rem;
+    color: white;
+    font-size: 2rem;
+}
+.Jumbo-container p{
+    margin: 30px 100px;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "Poppins", serif !important;
+}
+.Jumbo-container button{
+    border: 2px solid #0ef;
+    border-radius: 40px;
+    background-color: #0ef;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px 5px rgba(14, 239, 255, 0.5);
+    font-weight: bolder;
+    transition: .5s ease;
+    font-family: "Host Grotesk", sans-serif;
+    
+}
+.Jumbo-container button:hover{
+    box-shadow: none;
+}
+
+
+
+.image-container:hover .hover-box {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-container p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    padding: 2px 7px;
+}
+
+.image-container h2 {
+    margin: 15px 0;
+    color: white;
+}
+
+.hover-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.8;
+    transform: translateY(100%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.image-container {
+    position: relative;
+    width: 250px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #323946;
+}
+
+.image-container img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    top: 13px;
+}
+
+.all-rounder{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: 0rem 2rem;
+}
+
+#expertise {
+    margin: 17rem 0rem;
+}
+
+.hover-box h3{
+    font-size: 22px;
+    margin: 22px 0px;
+    color: black;
+}
+
+.expert{
+    text-align: center;
+    margin: 4rem 2rem;
+}
+.expert:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
+}
+.image-container img{
+    margin-top: 8px;
+}
+
+.ui{
+    position: relative;
+    top: 13px;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;  /* This will ensure the cards wrap on smaller screens */
+}
+
+/* Card styling */
+.card {
+    background-color: #323946;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25%;  /* Each card takes up 30% of the width */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);  /* Slightly increase the size of the card when hovered */
+}
+
+/* Card body styling */
+.card-body {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+.service-heading{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.service-heading:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
+}
+
+#service{
+    margin: 10rem 0rem;
+}
+
+.card i {
+    color: #0ef;               /* Icon color */
+    font-size: 4rem;            /* Icon size */
+    display: block;             /* Make the icon a block element */
+    text-align: center;         /* Center the icon inside the card */
+    margin-top: 20px;
+}
+
+
+.card-container button{
+    border: 1px solid #0ef;
+    border-radius: 40px;
+    background-color: #0ef;
+    padding: 9px 18px;
+    box-shadow: 0px 0px 10px 5px rgba(14, 239, 255, 0.5);
+    font-weight: bolder;
+    transition: .5s ease;
+    font-family: "Host Grotesk", sans-serif;
+    margin: 1.2rem 0rem;
+    
+}
+.card-container button:hover{
+    box-shadow: none;
+}
+
+
+.big-container span{
+    color: #0ef;
+}
+
+.modern-container span{
+    color: #0ef;
+}
+
+
+/* Footer Design   */
+
+#contact{
+    margin: 14rem 14rem;
+}
+
+.footer-heading h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.footer-heading span{
+    color: #0ef ;
+    font-size: 2rem;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 0px 10px;
+}
+
+.footer-container input{
+    font-size: 16px;
+    border-radius: 6px;
+    border: 2px solid #323946;
+    background-color: #323946;
+    margin-top: 10px;
+    /* margin: 10px;  */
+    height: 42px;
+    width: 326px;
+    padding: 10px 10px;
+    font-family: "Poppins", serif !important;
+
+}
+input::placeholder{
+    text-align: left;
+}
+.footer-container textarea{
+    font-size: 16px;
+    border-radius: 6px;
+    border: 2px solid #323946;
+    background-color: #323946;
+    margin-top: 10px;
+    margin-left: 42px;
+    margin-right: 40px;
+    width: 663px;
+    height: 198px;
+    padding: 10px 10px;
+    font-family: "Poppins", serif !important;
+}
+
+.footer-container button{
+    border: 1px solid #0ef;
+    border-radius: 40px;
+    background-color: #0ef;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 10px 5px rgba(14, 239, 255, 0.5);
+    font-weight: bolder;
+    transition: .5s ease;
+    font-family: "Host Grotesk", sans-serif;
+    margin: 25px 0rem;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.footer-container button:hover{
+    box-shadow: none;
+}
+
+
+
+.footer-container i{
+    position: fixed; /* Keeps the arrow fixed in place */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    background-color: #00d1ff; /* Background color */
+    color: white; /* Arrow color */
+    border-radius: 50%; /* Makes the button circular */
+    display: flex; /* Centers the arrow inside the button */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    font-size: 24px; /* Arrow size */
+    text-decoration: none; /* Removes underline from the link */
+    z-index: 1000; /* Ensures it stays above other elements */
+    transition: all 0.3s ease; /* Adds smooth hover effect */
+}
+
+.footer-container i:hover {
+    background-color: #007acc; /* Changes color on hover */
+    transform: translateY(-5px); /* Adds a lift effect */
+}
